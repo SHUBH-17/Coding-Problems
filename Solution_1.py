@@ -1,10 +1,44 @@
 # given list: arr, Requirement : DRHPaoyoisapsecpyiynth
 arr = ["Daisy","Rose","Hyacinth","Poppy"]
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------#
+#Final Solution
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------#
 
-#Solution
+#function which does the job but it requires length of the longest string element and input should be of string type and not a list type
+charBuffer = []
+def processWords(input,maxLen):
+    s = input.split(" ")
+    for i in range (0,maxLen):
+        for values in s:
+            if i>len(values)-1:
+                continue
+            else:
+                charBuffer.append(values[i])
+    return charBuffer
 
-#function which does the job but it requires length of the longest element 
-#and input should be of string type and not a list type
+#storing length of the longest element of arr list
+maxLength = len(max(arr, key=len))
+#converting list arr into string inputArr
+inputArr = " ".join(map(str,arr))
+
+#passing string inputArr and maxLength to our function and storing it in result
+result = processWords(inputArr,maxLength)
+
+#print result
+print(*result, sep = "")
+
+
+
+
+
+
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------#
+#Initial Solution (can be ignored)
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------#
+
+
+#function which does the job but it requires length of the longest string element and input should be of string type and not a list type
 charBuffer = []
 def processWords(input,maxLen):
     s = input.split(" ")
