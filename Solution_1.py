@@ -35,7 +35,7 @@ for element in arr:
     else:
         myArr.append(element)
 
-#converting list arr into string inputArr
+#converting list myArr into string inputArr
 inputArr = " ".join(map(str,myArr))
 
 #passing string inputArr and maxLength to our function and storing it in result
