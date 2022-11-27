@@ -8,7 +8,8 @@ arr = ["Daisy","Rose","Hyacinth","Poppy"]
 charBuffer = []
 def processWords(input,maxLen):
     s = input.split(" ")
-    #below for loop was failing when the length of all strings were not equal (that's why appended dummy character '*')
+    #below for loop was failing when the length of all strings were either not equal or generating wrong output : "DRHPaoyoisapsecp"
+    #(that's why appended dummy character '*')
     for i in range(0,maxLen):
         for values in s:
             #ignoring dummy symbol '*' 
