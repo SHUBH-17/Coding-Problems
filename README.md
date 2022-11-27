@@ -8,3 +8,4 @@ Return the resulting string.
 Example
 
 For arr ["Daisy", "Rose", "Hyacinth", "Poppy"], the output should be solution (arr) = "DRHPaoyoisapsecpyiynth".
+result should be "DRHPaoyoisapsecpyiynth".
