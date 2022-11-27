@@ -9,11 +9,11 @@ charBuffer = []
 def processWords(input,maxLen):
     s = input.split(" ")
     for i in range (0,maxLen):
-        for values in s:
-            if i>len(values)-1:
+        for value in s:
+            if i>len(value)-1:
                 continue
             else:
-                charBuffer.append(values[i])
+                charBuffer.append(value[i])
     return charBuffer
 
 #storing length of the longest element of arr list
