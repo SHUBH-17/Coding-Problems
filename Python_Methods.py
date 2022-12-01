@@ -13,7 +13,7 @@ string = 'geeksFORgeeks'
 string = string.replace('e','',2)
 print(string)
 
-# Remove 4th index from the string
+#3. Remove 4th index from the string
 string = 'geeksFORgeeks'
 string = string.replace(string[4],'',1)
 print(string)
