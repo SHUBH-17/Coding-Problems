@@ -6,17 +6,17 @@
 #1. Replace 1st g only with ch
 string = 'geeksFORgeeks'
 string = string.replace('g','ch',1)
-print(string)
+print(string) #cheeksFORgeeks
 
 #2. Remove 1st two e from the string
 string = 'geeksFORgeeks'
 string = string.replace('e','',2)
-print(string)
+print(string) #gksFORgeeks
 
 #3. Remove 4th index from the string
 string = 'geeksFORgeeks'
 string = string.replace(string[4],'',1)
-print(string)
+print(string) #geekFORgeeks
 
 
 #------------------------------------------------------------------------------------------------------------#
